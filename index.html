@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocha</title>
+    <script>
+      var myVar = setInterval(changeBanner, 7000);
+      var bannerIndex = 1;
+      function changeBanner(){
+        //alert(bannerIndex);
+        var bannerPrev = document.getElementById("banner" + bannerIndex);
+        bannerPrev.setAttribute("class", "banner-image hidden");
+        if(bannerIndex < 8){bannerIndex += 1;}
+        else {bannerIndex = 1;}
+        var banner = document.getElementById("banner"+ bannerIndex);
+        banner.setAttribute("class", "banner-image current");
+        
+      }
+    </script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="header">
+        <div class="header-left">
+            <img class="profilepicture" src='img/image3721.png'/>
+        </div>
+        <div class="header-right">
+            <div id="banner1" class="banner-image current" style="background-image: url('img/greenfield.jpg');"></div>
+            <div id="banner2" class="banner-image hidden" style="background-image: url('img/greenforestroad.jpg');"></div>
+            <div id="banner3" class="banner-image hidden" style="background-image: url('img/greenjungle.jpg');"></div>
+            <div id="banner4" class="banner-image hidden" style="background-image: url('img/greenrainforest.jpg');"></div>
+            <div id="banner5" class="banner-image hidden" style="background-image: url('img/greentrees.jpg');"></div>
+            <div id="banner6" class="banner-image hidden" style="background-image: url('img/greenwater.jpg');"></div>
+            <div id="banner7" class="banner-image hidden" style="background-image: url('img/greenrainforest.jpg');"></div>
+            <div id="banner8" class="banner-image hidden" style="background-image: url('img/greensky.jpg');"></div>
+            <div class="transparentbanner"></div>
+            <div class="titlename">
+              <h1>MOCHAMAD RIZKY ILMAWAN</h1>
+              <H3>Education is the best investment</H3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+      <div class="container">
+        <div class="profile">
+          <h1>Profiles</h1>
+          <h3 class="head">Address</h3>
+          <p class="profilecontent">Komplek PT Semen Padang L75 Blok A no 4, Indarung, Lubuk Kilangan</p>
+          <h3 class="head">City / Province</h3>
+          <p class="profilecontent">Padang / Sumatera Barat</p>
+          <h3 class="head">Birth</h3>
+          <p class="profilecontent">Surabaya, 2 July 2020</p>
+          <h3 class="head">Email</h3>
+          <p class="profilecontent">calonagnia@gmail.com</p>
+          <h3 class="head">Phone</h3>
+          <p class="profilecontent">+628153037401</p>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="hobbies">
+          <h1>Hobbies</h1>
+          <div class="hobby">
+            <img src="img/membaca.png"/>
+            <h3>Reading</h3>
+          </div>
+          <div class="hobby">
+            <img src="img/belajar.png"/>
+            <h3>Learning</h3>
+          </div>
+          <div class="hobby">
+            <img src="img/quran.png"/>
+            <h3>Ngaji</h3>
+          </div>
+          <div class="hobby">
+            <img src="img/travel.png"/>
+            <h3>Travelling</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1>Skills</h1>
+        <h2>Full-Stack Web Developer</h2>
+        <p>Mampu membangun dan mengembangkan perangkat lunak berbasis website. Pada sisi back-end menguasai node.js dan phyton dan
+          pada sisi front end menguasai responsive website dengan menggunakan html, css, javascript, dan dasar react native.
+        </p>
+        <h2>Android Developer</h2>
+        <p>Mampu mengembangakan perangkat lunak berbasis android dengan menggunakan bahasa pemrograman <span>Kotlin</span> dan <span>Android Jetpack</span></p>
+        <h2>Data Science</h2>
+        <p>Melakukan pengelolaan data dengan menggunakan data minning serta memvisualisasikan data menggunakan PowerBI dan Google Data Studio</p>
+        <p></p>
+        <h2>Other</h2>
+        <p>Menguasai dasar-dasar Machine Learning dan pemanfaatannya</p>
+        <p>Menguasai penggunaan IBM Watson untuk membangun aplikasi yang komprehensive</p>
+        <p>Menguasai pengelolaan Master Data SAP modul FICO</p>
+        <p>Mampu mengimplementasikan dasar Augmented Reality (AR)</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1>Experience</h1>
+        <div class="year">2013</div><div class="containcontainer">Junior Programmer in Collexe software house</div>
+        <div class="year">2013-2014</div><div class="containcontainer">Management Trainee PT Semen Padang</div>
+        <div class="year">2014-2016</div><div class="containcontainer">Jr Master Data Officer Bureau of Mgt Accounting</div>
+        <div class="year">2016-2017</div><div class="containcontainer">Accounting Standard &Master Data Officer Bureau of Mgt Accounting</div>
+        <div class="year">2018-2020</div><div class="containcontainer">General Accounting Officer Staff of Gnrl Accounting</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1>Education</h1>
+        <div class="year">2013</div><div class="containcontainer">	SURABAYA - INSTITUT TEKNOLOGI SEPULUH NOPEMBER Teknik Informatika (Strata 1)</div>
+        <div class="year">2020</div><div class="containcontainer">	PADANG - UNIV. ANDALAS Magister Manajemen (Strata 2)</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1>Courses</h1>
+        <div class="year">2015</div><div class="containcontainer">	Sharepoint for Suite Administrator	</div>
+        <div class="year">2015</div><div class="containcontainer">	Fundamental Manag. Resiko ISO 31000	</div>
+        <div class="year">2016</div><div class="containcontainer">	Pendalaman Interpretasi MB 2015 2016	</div>
+        <div class="year">2017</div><div class="containcontainer">	Information Security ISO 27001 : 2013	</div>
+        <div class="year">2017</div><div class="containcontainer">	Manager as Coach	</div>
+        <div class="year">2017</div><div class="containcontainer">	Personality Development B.2	</div>
+        <div class="year">2018</div><div class="containcontainer">	OLDP Batch 7 Workshop I	</div>
+        <div class="year">2018</div><div class="containcontainer">	OLDP Batch 7 Workshop 2	</div>
+        <div class="year">2018</div><div class="containcontainer">	Presentasi OLDP Batch 7 (2)	</div>
+        <div class="year">2019</div><div class="containcontainer">	Refreshment BSC & KPI	</div>
+        <div class="year">2019</div><div class="containcontainer">	Digitalent Kominfo Belajar Fundamental Aplikasi Android Expert	</div>
+        <div class="year">2019</div><div class="containcontainer">	Digitalent Kominfo Belajar Android Jetpack Pro	</div>
+        <div class="year">2019</div><div class="containcontainer">	Change Leadership	</div>
+        <div class="year">2019</div><div class="containcontainer">	Basic Accounting	</div>
+        <div class="year">2019</div><div class="containcontainer">	3D Printing and IOT (internet of things)	</div>
+        <div class="year">2019</div><div class="containcontainer">	Analisa laporan keuangan	</div>
+        <div class="year">2020</div><div class="containcontainer">	Digitalent Kominfo Mengembangkan Responsive Website </div>
+        <div class="year">2020</div><div class="containcontainer">	Performance Management System	</div>
+        <div class="year">2020</div><div class="containcontainer">	Belajar Dasar Visualisasi Data	</div>
+        <div class="year">2020</div><div class="containcontainer">	DBS Challange Belajar Membuat Augmented Reality	</div>
+        <div class="year">2020</div><div class="containcontainer">	IBM Scholarship Memulai Pemrograman Dengan Python	</div>
+        <div class="year">2020</div><div class="containcontainer">	IBM Scholarship Belajar Membuat Aplikasi Kognitif	</div>
+        <div class="year">2020</div><div class="containcontainer">	IBM Scholarship Belajar Machine Learning untuk Pemula	</div>
+        
+      </div>
+    </div>
+    <div class="footer"></div>
+    
+    
+  </body>  
+</html>
