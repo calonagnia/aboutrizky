@@ -14,7 +14,7 @@
         height: 400px;
     }
     .hobby img{
-        max-width: 140px;
+        max-width: 70px;
     }
     .current{
         top: 0px;
@@ -82,7 +82,7 @@
         width: 50%;
     }
     .hobby img{
-        max-width: 240px;
+        max-width: 140px;
     }
     .titlename {
         position: absolute;
