@@ -1,0 +1,2 @@
+# aboutrizky
+curriculum vitae
